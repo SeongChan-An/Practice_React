@@ -1,3 +1,6 @@
+const hooks = [];
+let currentComponent = 0;
+
 export class Component {
   constructor(props) {
     this.props = props;
@@ -49,3 +52,54 @@ export function createElement(tag, props, ...children) {
 export function render(vdom, container) {
   container.appendChild(createDOM(vdom));
 }
+
+// Hook 의 개념
+/*
+function useState(initValue) {
+  let position = currentComponent - 1;
+
+  if (!hooks[position]) {
+    hooks[position] = initValue;
+  }
+
+  const modifier = nextValue => {
+    hooks[position] = nextValue;
+  };
+
+  return [ hooks[position], modifier ];
+}
+
+export function createElement(tag, props, ...children) {
+  if (typeof tag === 'function') {
+    if (tag.prototype instanceof Component) {
+      const instance = new tag(makeProps(props, children));
+      return instance.render();
+    }
+
+    hooks[currentComponent] = null;
+    currentComponent++;
+
+    if (children.length > 0) {
+      return tag(makeProps(props, children));
+    } else {
+      return tag(props);
+    } 
+  }
+
+  return { tag, props, children };
+}
+*/
+
+// export const render = (function () {
+//   let prevDom = null;
+
+//   return function (vdom, prevDom) {
+//     if (prevDom === null) {
+//       prevDom = vdom;
+//     }
+
+//     // diff
+//     // https://github.com/snabbdom/snabbdom
+//     container.appendChild(createDOM(vdom));
+//   };
+// })();
