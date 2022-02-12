@@ -1,32 +1,30 @@
-import React, { PureComponent } from "react";
+import React, { memo } from "react";
 
-class HabitAddForm extends PureComponent {
-  // 클래스형 컴포넌트에서 사용시
+// rsi emmet
+// meom : 클래스의 purecomponent 와 동일, 값이 변경되지 않으면 업데이트 하지 않음
+const habitAddForm = memo((props) => {
   // Refs and the DOM: https://reactjs.org/docs/refs-and-the-dom.html
-  formRef = React.createRef();
-  inputRef = React.createRef();
+  const formRef = React.createRef();
+  const inputRef = React.createRef();
 
-  onSubmit = (event) => {
+  const onSubmit = (event) => {
     event.preventDefault();
-    const name = this.inputRef.current.value;
-    name && this.props.onAdd(name);
-    this.formRef.current.reset();
+    const name = inputRef.current.value;
+    name && props.onAdd(name);
+    formRef.current.reset();
   };
 
-  render() {
-    console.log("habitAddForm");
-    return (
-      <form ref={this.formRef} className="add-form" onSubmit={this.onSubmit}>
-        <input
-          ref={this.inputRef}
-          type="text"
-          className="add-input"
-          placeholder="Habit"
-        />
-        <button className="add-button">Add</button>
-      </form>
-    );
-  }
-}
+  return (
+    <form ref={formRef} className="add-form" onSubmit={onSubmit}>
+      <input
+        ref={inputRef}
+        type="text"
+        className="add-input"
+        placeholder="Habit"
+      />
+      <button className="add-button">Add</button>
+    </form>
+  );
+});
 
-export default HabitAddForm;
+export default habitAddForm;
