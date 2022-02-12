@@ -24,3 +24,13 @@
     : 유닛테스트를 도와주는 JS Testing framework
   - PostCSS
     : CSS 전처리기,
+
+## Using concept
+
+### JS Deep, Shallow Copy
+
+- [참고](https://github.com/SeongChan-An/JavaScript_TypeScript_Essential/blob/main/02..Concept%26TechSkills/Processing06_Obejct_Merge.js)
+
+### [PureComponent](https://reactjs.org/docs/react-api.html#reactpurecomponent)
+
+### [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
