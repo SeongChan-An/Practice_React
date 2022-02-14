@@ -1,8 +1,7 @@
-node_modules/
-.cache/
-dist
-.vscode
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# dependencies
+/node_modules
 /.pnp
 .pnp.js
 
@@ -22,9 +21,3 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-# Local Netlify folder
-.netlify
-
-# API KEYs
-.env
-02..Project/youtube_clone/src/config/googleAPI.json

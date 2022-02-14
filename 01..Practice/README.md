@@ -34,3 +34,13 @@
 ### [PureComponent](https://reactjs.org/docs/react-api.html#reactpurecomponent)
 
 ### [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+
+## 연습 프로젝트 확인
+
+- [Habit-Tracker](https://react-practice-habit-traker.netlify.app)
+
+## PostCSS
+
+- [PostCSS](https://postcss.org/)
+  - [PostCSS Plugins](https://www.postcss.parts/)
+  - [Plugins Github](https://github.com/postcss/postcss/blob/master/docs/plugins.md)
