@@ -8,6 +8,7 @@ const SearchHeader = ({ onSearch }) => {
     console.log(value);
     onSearch(value);
   };
+
   const onClick = () => {
     handlerSearch();
   };

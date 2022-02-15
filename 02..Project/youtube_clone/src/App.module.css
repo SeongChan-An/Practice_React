@@ -24,3 +24,9 @@
 .list {
   flex: 1 1 30%;
 }
+
+@media (max-width: 767px) {
+  .content {
+    display: block;
+  }
+}
