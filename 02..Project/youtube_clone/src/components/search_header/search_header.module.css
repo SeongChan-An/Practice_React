@@ -2,7 +2,7 @@
   display: flex;
   height: 4rem;
   padding: 0.5em 1em;
-  background: #000;
+  /* background: #000; */
   color: #fff;
 }
 
@@ -13,10 +13,20 @@
   cursor: pointer;
 }
 
+.img {
+  margin-right: 0.2em;
+}
+
+.title {
+  height: 100%;
+}
+
 .input {
   flex-basis: 100%;
   font-size: 1.2rem;
   outline: 0;
+  border: 0.5px solid #373737;
+  background-color: #202020;
 }
 
 .button {

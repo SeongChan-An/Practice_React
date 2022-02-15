@@ -16,7 +16,22 @@ code {
   box-sizing: border-box;
 }
 
+input,
+button {
+  border: none;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
 #root {
   display: flex;
   justify-content: center;
+  background-color: #202020;
+  color: #fff;
 }
