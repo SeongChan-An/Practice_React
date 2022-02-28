@@ -1,4 +1,4 @@
-import { getDatabase, ref, set, remove, onValue, off } from 'firebase/database';
+import { getDatabase, ref, set, remove, onValue, off } from "firebase/database";
 
 class CardRepository {
   constructor(app) {

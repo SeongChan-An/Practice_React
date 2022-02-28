@@ -36,3 +36,7 @@
   ```jsx
   <Link to={{ pathname: "/home", state: state }} />
   ```
+
+## 주요기능에 대한 부분
+- 값을 변경 시 preview에 바로 반영되는 부분
+  : edit onchange 메서드 추가. 
