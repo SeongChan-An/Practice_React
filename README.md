@@ -1,6 +1,6 @@
 # React를 배우고 연습하는 Repository
 
-## [Basic Concept](./Basic_Concept/)
+## [Basic Concept](./00..Basic_Concept/)
 
 - React를 시작하기 전에 개념적으로 이해하고 학습하기 위한 저장소
 
